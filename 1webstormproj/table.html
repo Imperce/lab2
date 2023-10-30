@@ -1,0 +1,459 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8">
+  <title>Таблица</title>
+</head>
+
+<body leftmargin="5%" topmargin="2%" bgcolor="#FFFFE0" text="#BA55D3">
+  <h1 align="center">Таблица сравнения банков</h1>
+    <hr color="#EE82EE">
+    <h3><i>Меню:</i></h3>
+      <ul>
+        <li><a href="table.html" target="_blank">Таблица сравнения банков</a></li>
+        <li><a href="regi.html" target="_blank">Регистрация на сайте</a> или <a href="405.html" target="_blank" title="В разработке">Войти через <i>ГосУслуги</i></a></li>
+        <li><a href="index.html" target="_blank">Главная страница</a></li>
+        <li><a href="404.html" target="_blank" title="В разработке">Форум</a></li>
+        <li><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank" title="Обязательно для посещения">Ответы на курс html Stepik</a></li>
+      </ul>
+    <hr color="#EE82EE">
+  <a href="https://www.ozon.ru/category/banka-steklyannaya-dlya-konservirovaniya/" target="_blank"><img src="img/jars.jpg" align="right"></a>
+    <br>
+    <details>
+      <summary>График</summary>
+      <br>
+      <hr color="#EE82EE" width="25%" align="left">
+      <table cellspacing="5">
+        <tr>
+          <th>Значение по оси OX</th>
+          <th>Результат</th>
+        </tr>
+        <tr>
+          <td><label><input type="radio" name="ox" value="1_1">Чистые активы</label></td>
+          <td><label><input type="checkbox" name="oy" value="2_1">Параметр 1</label></td>
+        </tr>
+        <tr>
+          <td><label><input type="radio" name="ox" value="1_2">Чистая прибыль</label></td>
+          <td><label><input type="checkbox" name="oy" value="2_2">Параметр 2</label></td>
+        </tr>
+        <tr>
+          <td><label><input type="radio" name="ox" value="1_3">Вклады</label></td>
+          <td><label><input type="checkbox" name="oy" value="2_3">Параметр 3</label></td>
+        </tr>
+        <tr>
+          <td><label><input type="radio" name="ox" value="1_4">Кредиты</label></td>
+          <td><label><input type="checkbox" name="oy" value="2_4">Параметр 4</label></td>
+        </tr>
+      </table>
+      <p><input type="button" value="Построить график"></p>
+      <p>Здесь будет график</p>
+      <hr color="#EE82EE" width="25%" align="left">
+      <br>
+    </details>
+    <details>
+      <summary>Фильтр</summary>
+      <br>
+      <hr color="#EE82EE" width="25%" align="left">
+      <label>Наименование банка <input type="text" name="fil1"></label><br><br>
+      <label>Чистые активы от <input type="number" name="fil2" min="0"> до <input type="number" name="fil1"></label><br><br>
+      <label>Чистая прибыль от <input type="number" name="fil3" min="0"> до <input type="number" name="fil1"></label><br><br>
+      <label>Вклады от <input type="number" name="fil4" min="0"> до <input type="number" name="fil1"></label><br><br>
+      <label>Кредиты от <input type="number" name="fil5" min="0"> до <input type="number" name="fil1"></label><br><br>
+      <input type="button" value="Найти">
+      <hr color="#EE82EE" width="25%" align="left">
+      <br><br>
+    </details>
+    <details>
+      <summary>Сортировка</summary>
+      <br>
+      <hr color="#EE82EE" width="25%" align="left">
+      <input type="radio" name="sort3" value="333_1">
+      <label>Сортировать поле <i>Наименование банка</i> по алфавиту: <select name="sort4">
+        <option value="32_1">А-->Я</option>
+        <option value="32_2">Я-->А</option>
+      </select></label><br><br>
+      <input type="radio" name="sort3" value="333_2">
+      <label>Сортировать поле <select name="sort">
+        <option value="3_1">Чистые активы</option>
+        <option value="3_2">Чистая прибыль</option>
+        <option value="3_3">Вклады</option>
+        <option value="3_4">Кредиты</option>
+      </select></label> по:
+      <label>возрастанию<input type="radio" name="sort2" value="33_1"></label>
+      <label>убыванию<input type="radio" name="sort2" value="33_2"></label><br><br>
+      <input type="button" value="Сортировать">
+
+      <hr color="#EE82EE" width="25%" align="left">
+      <br><br>
+    </details>
+    <br>
+    <table border="2" cellpadding="5" cellspacing="0">
+      <tr>
+        <th>Наименование банка</th>
+        <th>Чистые активы,<br>млрд руб.</th>
+        <th>Чистая прибыль,<br>млрд руб.</th>
+        <th>Вклады,<br>млрд руб.</th>
+        <th>Кредиты,<br>млрд руб.</th>
+      </tr>
+      <tr>
+        <td>СберБанк</td>
+        <td>5100</td>
+        <td>1200</td>
+        <td>16900</td>
+        <td>10700</td>
+      </tr>
+      <tr>
+        <td>ВТб</td>
+        <td>1500</td>
+        <td>242.6</td>
+        <td>5700</td>
+        <td>4200</td>
+      </tr>
+      <tr>
+        <td>ГПБ</td>
+        <td>811.2</td>
+        <td>91</td>
+        <td>1600</td>
+        <td>704.5</td>
+      </tr>
+      <tr>
+        <td>Альфа-Банк</td>
+        <td>662</td>
+        <td>133.9</td>
+        <td>1900</td>
+        <td>1300</td>
+      </tr>
+      <tr>
+        <td>ФК Открытие</td>
+        <td>505.5</td>
+        <td>85.1</td>
+        <td>1100</td>
+        <td>585.1</td>
+      </tr>
+      <tr>
+        <td>ПСБ</td>
+        <td>297.6</td>
+        <td>22.7</td>
+        <td>607.2</td>
+        <td>461.7</td>
+      </tr>
+      <tr>
+        <td>МКБ</td>
+        <td>231.1</td>
+        <td>27.2</td>
+        <td>542.6</td>
+        <td>190.6</td>
+      </tr>
+      <tr>
+        <td>ЮниКредитбанк</td>
+        <td>150</td>
+        <td>26</td>
+        <td>412</td>
+        <td>156</td>
+      </tr>
+      <tr>
+        <td>Россельхозбанк</td>
+        <td>144</td>
+        <td>23.3</td>
+        <td>389</td>
+        <td>143</td>
+      </tr>
+      <tr>
+        <td>Совкомбанк</td>
+        <td>151</td>
+        <td>21</td>
+        <td>364</td>
+        <td>113</td>
+      </tr>
+      <tr>
+        <td>Росбанк</td>
+        <td>139</td>
+        <td>16</td>
+        <td>326</td>
+        <td>98</td>
+      </tr>
+      <tr>
+        <td>Райффайзенбанк</td>
+        <td>143</td>
+        <td>15.7</td>
+        <td>315</td>
+        <td>112</td>
+      </tr>
+      <tr>
+        <td>ВУЗ-банк</td>
+        <td>139</td>
+        <td>14.6</td>
+        <td>304</td>
+        <td>93</td>
+      </tr>
+      <tr>
+        <td>Банк ДОМ.РФ</td>
+        <td>127.3</td>
+        <td>15.2</td>
+        <td>296</td>
+        <td>84</td>
+      </tr>
+      <tr>
+        <td>ВБРР</td>
+        <td>116</td>
+        <td>16.2</td>
+        <td>301</td>
+        <td>93</td>
+      </tr>
+      <tr>
+        <td>Тинькофф Банк</td>
+        <td>138</td>
+        <td>14.7</td>
+        <td>286</td>
+        <td>91</td>
+      </tr>
+      <tr>
+        <td>Банк "Санкт-Петербург"</td>
+        <td>122</td>
+        <td>13</td>
+        <td>271</td>
+        <td>84</td>
+      </tr>
+      <tr>
+        <td>Уралсиб</td>
+        <td>118</td>
+        <td>13.7</td>
+        <td>269</td>
+        <td>79</td>
+      </tr>
+      <tr>
+        <td>Ак Барс Банк</td>
+        <td>107</td>
+        <td>12.9</td>
+        <td>253</td>
+        <td>76</td>
+      </tr>
+      <tr>
+        <td>Ситибанк</td>
+        <td>104</td>
+        <td>14.1</td>
+        <td>293</td>
+        <td>73</td>
+      </tr>
+      <tr>
+        <td>Банк Россия</td>
+        <td>148</td>
+        <td>19.1</td>
+        <td>303</td>
+        <td>101</td>
+      </tr>
+      <tr>
+        <td>РНКБ</td>
+        <td>96</td>
+        <td>13.6</td>
+        <td>246</td>
+        <td>68</td>
+      </tr>
+      <tr>
+        <td>Почта Банк</td>
+        <td>88</td>
+        <td>13.2</td>
+        <td>243</td>
+        <td>66</td>
+      </tr>
+      <tr>
+        <td>Хоум Банк</td>
+        <td>84</td>
+        <td>21.6</td>
+        <td>184</td>
+        <td>69</td>
+      </tr>
+      <tr>
+        <td>Новикомбанк</td>
+        <td>81</td>
+        <td>14.9</td>
+        <td>227</td>
+        <td>71</td>
+      </tr>
+      <tr>
+        <td>МТС Банк</td>
+        <td>77</td>
+        <td>17</td>
+        <td>194</td>
+        <td>63</td>
+      </tr>
+      <tr>
+        <td>СМП Банк</td>
+        <td>73</td>
+        <td>22</td>
+        <td>164.6</td>
+        <td>67</td>
+      </tr>
+      <tr>
+        <td>Русский Стандарт</td>
+        <td>69</td>
+        <td>9</td>
+        <td>153.7</td>
+        <td>77</td>
+      </tr>
+      <tr>
+        <td>ЦентроКредит</td>
+        <td>70</td>
+        <td>14.8</td>
+        <td>136.2</td>
+        <td>73</td>
+      </tr>
+      <tr>
+        <td>Ренессанс Кредит</td>
+        <td>92</td>
+        <td>16.2</td>
+        <td>118</td>
+        <td>63</td>
+      </tr>
+      <tr>
+        <td>Абсолют Банк</td>
+        <td>66</td>
+        <td>8.1</td>
+        <td>104</td>
+        <td>57</td>
+      </tr>
+      <tr>
+        <td>Авто Финанс Банк</td>
+        <td>62</td>
+        <td>19.5</td>
+        <td>143</td>
+        <td>41</td>
+      </tr>
+      <tr>
+        <td>Драйв Клик Банк</td>
+        <td>59</td>
+        <td>6.1</td>
+        <td>71</td>
+        <td>68</td>
+      </tr>
+      <tr>
+        <td>ОТП Банк</td>
+        <td>52.6</td>
+        <td>13.2</td>
+        <td>92.4</td>
+        <td>76</td>
+      </tr>
+      <tr>
+        <td>Банк Зенит</td>
+        <td>47</td>
+        <td>21.6</td>
+        <td>104.8</td>
+        <td>93</td>
+      </tr>
+      <tr>
+        <td>Авангард</td>
+        <td>41</td>
+        <td>14.7</td>
+        <td>102.4</td>
+        <td>78</td>
+      </tr>
+      <tr>
+        <td>Аверс</td>
+        <td>39</td>
+        <td>48</td>
+        <td>84.1</td>
+        <td>56</td>
+      </tr>
+      <tr>
+        <td>Экспобанк</td>
+        <td>33</td>
+        <td>17.9</td>
+        <td>94.2</td>
+        <td>91</td>
+      </tr>
+      <tr>
+        <td>УБРиР</td>
+        <td>29</td>
+        <td>13.8</td>
+        <td>84.9</td>
+        <td>87</td>
+      </tr>
+      <tr>
+        <td>ИНГ Банк</td>
+        <td>23</td>
+        <td>21</td>
+        <td>79.1</td>
+        <td>84</td>
+      </tr>
+      <tr>
+        <td>Кредит Европа Банк</td>
+        <td>21.5</td>
+        <td>0.962</td>
+        <td>77.3</td>
+        <td>82.2</td>
+      </tr>
+      <tr>
+        <td>ТКБ</td>
+        <td>20.1</td>
+        <td>14.7</td>
+        <td>71</td>
+        <td>61</td>
+      </tr>
+      <tr>
+        <td>Локо-Банк</td>
+        <td>19.6</td>
+        <td>14</td>
+        <td>62</td>
+        <td>42</td>
+      </tr>
+      <tr>
+        <td>АТБ</td>
+        <td>18.9</td>
+        <td>12</td>
+        <td>49</td>
+        <td>0.081</td>
+      </tr>
+      <tr>
+        <td>Фольсваген Банк Рус</td>
+        <td>18.6</td>
+        <td>1.4</td>
+        <td>0</td>
+        <td>28.8</td>
+      </tr>
+      <tr>
+        <td>Банк Кубань Кредит</td>
+        <td>18.4</td>
+        <td>11</td>
+        <td>2</td>
+        <td>26.2</td>
+      </tr>
+      <tr>
+        <td>Солидарность</td>
+        <td>18.1</td>
+        <td>10.1</td>
+        <td>3.6</td>
+        <td>23.6</td>
+      </tr>
+      <tr>
+        <td>СНГБ</td>
+        <td>17.9</td>
+        <td>9.9</td>
+        <td>0.821</td>
+        <td>22</td>
+      </tr>
+      <tr>
+        <td>Центр-Инвест</td>
+        <td>17.4</td>
+        <td>9.4</td>
+        <td>0.692</td>
+        <td>19</td>
+      </tr>
+      <tr>
+        <td>Тойота Банк</td>
+        <td>17</td>
+        <td>1.1</td>
+        <td>0</td>
+        <td>17</td>
+      </tr>
+      <tr>
+        <td>Киви Банк</td>
+        <td>15.9</td>
+        <td>8.7</td>
+        <td>0.499</td>
+        <td>0.003</td>
+      </tr>
+    </table>
+</body>
+
+</html>
